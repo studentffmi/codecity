@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#07162d" name="theme-color"/>
+<meta content="CODE CITY — інтерактивний навчальний комплекс Python для 7 класу від учительки інформатики Юлії Машкаринець: 6 ігор, контрольна та проєктна лабораторія." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="CODE CITY — Python, зрозумілий дітям | 7 клас" property="og:title"/>
+<meta content="Готовий комплект для уроків Python: 6 тематичних ігор, контрольна та проєктна лабораторія. Теорія, практика й інтерактив." property="og:description"/>
+<meta content="assets/cover.webp" property="og:image"/>
+<title>CODE CITY — інтерактивний комплекс Python для 7 класу | Юлія Машкаринець</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<style>
+  :root{--bg:#061426;--bg2:#0b1b33;--navy:#07172d;--panel:#0b2546;--panel2:#103257;--line:rgba(99,171,223,.21);--sky:#57dfff;--sky2:#79f6ff;--orange:#e28b06;--orange2:#ffad28;--text:#f2f8ff;--muted:#9eb5cf;--glow:0 0 24px rgba(31,185,255,.23);--wide:1180px}
+  *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,'Segoe UI',system-ui,-apple-system,Arial,sans-serif;line-height:1.62;overflow-x:hidden}body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(circle at 82% 4%,rgba(35,147,255,.13),transparent 28%),radial-gradient(circle at 9% 41%,rgba(226,139,6,.09),transparent 24%),linear-gradient(rgba(49,125,184,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(49,125,184,.035) 1px,transparent 1px);background-size:auto,auto,58px 58px,58px 58px}a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}img{max-width:100%;display:block}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #ffd27b;outline-offset:4px}::selection{background:#fbad40;color:#112748}.container{width:min(calc(100% - 44px),var(--wide));margin-inline:auto}.section{padding:112px 0;position:relative}.eyebrow{display:inline-flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:2.2px;font-size:11px;font-weight:850;color:var(--sky2)}.eyebrow::before{content:"";display:block;width:22px;height:2px;background:var(--orange2);box-shadow:0 0 10px var(--orange2)}h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.13;letter-spacing:-.045em}h1{font-size:clamp(43px,5.5vw,76px);font-weight:900}h2{font-size:clamp(32px,4vw,52px);font-weight:870}h3{font-size:22px;letter-spacing:-.025em}p{color:var(--muted);font-size:17px}.lead{font-size:clamp(18px,1.85vw,21px);line-height:1.8}.accent{color:var(--orange2)}.cyan{color:var(--sky2)}.section-intro{max-width:730px;margin-bottom:43px}.section-intro h2{margin:14px 0 20px}.section-intro p{font-size:19px}.btn{border:1px solid transparent;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:14px 24px;border-radius:13px;font-size:15px;font-weight:850;line-height:1.2;transition:transform .2s,box-shadow .2s,background .2s;text-align:center}.btn:hover{transform:translateY(-2px)}.btn-primary{background:linear-gradient(128deg,#ffb53c,#e98d06);color:#16213b;box-shadow:0 9px 32px rgba(224,126,5,.23)}.btn-primary:hover{box-shadow:0 10px 43px rgba(255,157,16,.45)}.btn-outline{border-color:rgba(99,210,255,.43);color:#d9f6ff;background:rgba(27,75,122,.2)}.btn-outline:hover{background:rgba(52,148,191,.25)}.btn-small{min-height:43px;padding:10px 17px;font-size:13px}.btn[disabled]{cursor:not-allowed;opacity:.6;filter:saturate(.3);box-shadow:none;transform:none}.small-label{font-size:13px;color:var(--muted)}.topbar{position:sticky;top:0;z-index:100;background:rgba(4,18,35,.9);backdrop-filter:blur(18px);border-bottom:1px solid rgba(86,192,251,.15)}.navinner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:flex;align-items:center;gap:14px;flex-shrink:0}.brand-logo{width:145px;height:auto;filter:drop-shadow(0 0 11px rgba(248,141,15,.2))}.brand-sep{height:28px;width:1px;background:rgba(122,191,231,.35)}.brand-label{font-size:11px;line-height:1.45;font-weight:750;letter-spacing:.07em;color:#b9cee9;text-transform:uppercase}.navlinks{display:flex;gap:26px;align-items:center}.navlinks>a:not(.btn){color:#c3d5e9;font-size:14px;font-weight:720}.navlinks>a:not(.btn):hover{color:var(--sky)}.menu-toggle{display:none;border:1px solid var(--line);background:#102846;color:white;border-radius:10px;font-size:22px;width:44px;height:44px}.hero{padding:74px 0 88px;overflow:hidden;position:relative}.hero::after{content:"";position:absolute;width:560px;height:560px;right:-210px;top:15px;border:1px solid rgba(70,176,255,.13);border-radius:50%;box-shadow:0 0 0 70px rgba(30,119,201,.025),0 0 0 148px rgba(30,119,201,.015);pointer-events:none}.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) .86fr;gap:64px;align-items:center}.hero h1{margin:24px 0 26px}.hero h1 em{font-style:normal;background:linear-gradient(135deg,#fff1ba,var(--orange2) 55%,#ff8d16);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy>.lead{max-width:615px;margin-bottom:31px}.tagrow{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:25px}.tag{border:1px solid rgba(83,205,252,.22);background:rgba(7,59,104,.44);padding:8px 12px;border-radius:999px;font-size:13px;font-weight:720;color:#b7e5ff}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.microtext{font-size:13px;color:#8fb0d1;margin-top:21px;display:flex;align-items:center;gap:8px}.microtext b{color:var(--sky2)}.poster-frame{position:relative;isolation:isolate;max-width:460px;margin:0 auto;padding:8px;border-radius:25px;transform:rotate(3deg);background:linear-gradient(150deg,rgba(106,240,255,.8),rgba(10,63,129,.3) 42%,rgba(244,158,32,.8));box-shadow:0 33px 82px #001021,0 0 50px rgba(28,177,237,.25);transition:transform .4s}.poster-frame:hover{transform:rotate(0deg) translateY(-5px)}.poster-frame img{border-radius:18px;width:100%;max-height:590px;object-fit:cover;object-position:top}.floating{position:absolute;z-index:2;padding:12px 15px;border:1px solid #4bbbec99;background:rgba(7,28,60,.92);backdrop-filter:blur(12px);border-radius:13px;box-shadow:0 12px 32px #00162988;font-size:13px;font-weight:850;color:#e5faff;transform:rotate(-3deg)}.floating.a{left:-26px;top:19%}.floating.b{right:-27px;bottom:17%}.floating strong{color:var(--orange2)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:45px;max-width:610px}.stat{border-left:2px solid #3f8bc4;padding:3px 15px}.stat strong{display:block;font-size:29px;line-height:1;font-weight:900;letter-spacing:-.04em;color:#fff}.stat span{display:block;font-size:13px;color:#96b1cd;margin-top:10px}.pain{background:linear-gradient(180deg,rgba(12,37,68,.38),rgba(4,18,33,0))}.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.pain-card{padding:29px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(155deg,rgba(16,47,80,.86),rgba(8,28,53,.86));min-height:240px;position:relative;overflow:hidden}.pain-card::before{position:absolute;content:"";width:85px;height:85px;right:-38px;top:-38px;border:1px solid rgba(244,149,21,.2);border-radius:50%}.pain-number{display:inline-grid;place-items:center;width:43px;height:43px;border-radius:12px;background:rgba(235,142,10,.12);color:#ffc26c;border:1px solid rgba(243,147,18,.33);font-weight:900;margin-bottom:22px}.pain-card h3{font-size:21px;margin-bottom:12px}.pain-card p{font-size:15px;line-height:1.8}.answer-strip{margin-top:28px;padding:23px 25px;border:1px solid rgba(248,171,58,.3);border-radius:16px;background:linear-gradient(95deg,rgba(226,139,6,.1),rgba(32,113,184,.09));color:#e6efff;font-size:16px}.answer-strip b{color:#ffbf61}.game{background:radial-gradient(circle at 95% 35%,rgba(25,122,212,.09),transparent 35%)}.game-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px;align-items:start}.game-list{display:grid;gap:9px}.game-tab{text-align:left;color:#dcecff;display:flex;align-items:center;gap:16px;border:1px solid rgba(96,173,228,.22);background:#0b2443;padding:16px 18px;border-radius:13px;transition:border-color .2s,background .2s,transform .2s}.game-tab:hover{background:#123457;transform:translateX(3px)}.game-tab.active{border-color:rgba(255,170,51,.75);background:linear-gradient(110deg,rgba(226,139,6,.16),rgba(19,65,110,.7));box-shadow:0 0 22px rgba(228,141,13,.08)}.game-tab .num{color:#ffb657;font-size:12px;font-weight:900;width:21px}.game-tab strong{display:block;font-size:15px;line-height:1.3}.game-tab small{display:block;font-size:12px;color:#8cb1d4;margin-top:5px}.shot-panel{border:1px solid rgba(70,174,237,.44);padding:12px;background:linear-gradient(145deg,#102c4e,#071c36);border-radius:18px;box-shadow:var(--glow);position:sticky;top:102px}.fake-browser{height:36px;display:flex;align-items:center;gap:7px;padding:0 8px}.fake-browser>i{width:9px;height:9px;border-radius:50%;background:#ff816c}.fake-browser>i:nth-child(2){background:#ffd466}.fake-browser>i:nth-child(3){background:#4fe2ae}.fake-browser span{margin-left:auto;font-size:11px;color:#7e9dbc;font-family:ui-monospace,Consolas,monospace}.game-shot{width:100%;height:340px;object-fit:cover;object-position:top;border-radius:10px;border:1px solid #275482;background:#0b1935;transition:opacity .2s}.shot-caption{padding:16px 7px 4px}.shot-caption h3{margin-bottom:7px}.shot-caption p{font-size:15px;margin-bottom:0}.assessments{margin-top:28px;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.assessment{display:flex;gap:14px;border:1px solid var(--line);border-radius:14px;padding:18px;background:rgba(16,44,74,.7)}.assessment .ico{display:grid;place-items:center;font-size:23px;border-radius:11px;flex:0 0 46px;height:46px;background:rgba(80,165,214,.12)}.assessment b{display:block;color:#fff;font-size:15px}.assessment p{font-size:12px;margin:5px 0 0}.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.benefit{border:1px solid var(--line);border-radius:19px;padding:30px 26px;background:linear-gradient(145deg,#102b4d,#071f3b);min-height:246px}.benefit-icon{width:54px;height:54px;background:linear-gradient(160deg,rgba(242,153,29,.16),rgba(30,159,237,.17));border:1px solid rgba(78,191,238,.25);border-radius:15px;display:grid;place-items:center;font-size:25px;margin-bottom:24px}.benefit h3{font-size:21px}.benefit p{font-size:15px;line-height:1.78}.video-area{display:grid;grid-template-columns:.75fr 1.25fr;gap:50px;align-items:center}.video-stage{position:relative;border:1px solid rgba(75,194,255,.48);border-radius:23px;background:#0a2344;padding:11px;box-shadow:0 0 44px rgba(28,162,237,.15)}.video-stage img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top;border-radius:14px;filter:brightness(.69)}.video-overlay{position:absolute;inset:12px;border-radius:13px;display:grid;place-items:center;text-align:center;background:linear-gradient(180deg,transparent 30%,rgba(4,19,42,.73));pointer-events:none}.video-overlay-inner{display:grid;place-items:center;gap:10px}.video-play{width:68px;height:68px;display:grid;place-items:center;border-radius:50%;background:var(--orange2);color:#15213c;font-size:26px;box-shadow:0 0 0 10px rgba(255,177,45,.14),0 0 30px rgba(250,156,21,.55)}.video-overlay span{font-size:13px;font-weight:800;color:#fff}.video-placeholder{font-size:12px;color:#9bc1da;margin-top:10px}.video-frame{width:100%;aspect-ratio:16/9;border:0;display:none;border-radius:13px;background:black}.author{background:radial-gradient(circle at 10% 25%,rgba(229,135,3,.1),transparent 30%),#07192e}.author-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}.author-art{min-height:425px;position:relative;background:linear-gradient(145deg,rgba(240,147,17,.95),rgba(138,73,3,.95));border-radius:28px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:34px 28px;box-shadow:0 0 50px #dc840427}.author-art::before{content:"</>";font:bold 148px/1 ui-monospace,monospace;position:absolute;right:-35px;bottom:-30px;color:rgba(255,255,255,.12);transform:rotate(-15deg)}.author-art::after{content:"";position:absolute;inset:18px;border:1px solid rgba(255,255,255,.3);border-radius:18px;pointer-events:none}.author-logo{width:min(250px,100%);filter:drop-shadow(0 7px 9px rgba(105,52,0,.12));border-radius:20px}.author-art p{color:#fff3dc;font-size:15px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;margin:18px 0 0}.author-grid h2{margin:15px 0 25px}.author-grid .lead{color:#bfcee2}.author-note{margin:22px 0 0;padding:19px 23px;border-left:3px solid var(--orange);background:rgba(241,152,28,.055);border-radius:0 13px 13px 0;color:#e2ebf6;font-size:15px}.cta{padding:86px 0}.cta-box{position:relative;overflow:hidden;border:1px solid rgba(255,173,51,.5);border-radius:29px;padding:67px 8%;background:radial-gradient(circle at 100% 0%,rgba(245,151,24,.28),transparent 44%),linear-gradient(125deg,#092d54,#091b36 75%);box-shadow:0 25px 85px rgba(0,9,29,.35);text-align:center}.cta-box::after{content:"PYTHON";position:absolute;right:-13px;bottom:-30px;font-size:clamp(70px,16vw,235px);font-weight:950;line-height:1;letter-spacing:-.09em;opacity:.034;pointer-events:none}.cta-box h2{max-width:760px;margin:17px auto 18px}.cta-box p{max-width:640px;font-size:17px;margin:0 auto 25px}.purchase{padding-top:70px}.purchase-grid{display:grid;grid-template-columns:1fr .9fr;gap:70px;align-items:start}.checklist{display:grid;gap:15px;margin:27px 0 35px}.checkline{display:flex;gap:13px;align-items:flex-start;color:#d6e9f9;font-size:15px}.checkline span{width:23px;height:23px;flex-shrink:0;display:grid;place-items:center;border:1px solid rgba(118,255,224,.5);color:#7dffe4;border-radius:50%;font-size:13px}.price-card{border:1px solid rgba(240,155,32,.56);border-radius:24px;padding:30px;background:linear-gradient(150deg,#143658,#0b223f 66%);box-shadow:0 0 44px rgba(231,139,6,.09)}.price-card .offer-badge{display:inline-block;color:#f6c57c;border:1px solid rgba(235,159,44,.37);border-radius:100px;background:rgba(204,118,8,.1);font-size:11px;font-weight:800;letter-spacing:.1em;padding:7px 12px;text-transform:uppercase}.price-number{font-size:clamp(25px,3.4vw,39px);font-weight:900;letter-spacing:-.03em;margin:20px 0 6px;line-height:1.15}.price-meta{font-size:14px;color:#b2cce5}.buybtn{width:100%;margin:23px 0 11px}.purchase-setup{background:#122f50;border:1px dashed rgba(89,199,249,.3);border-radius:12px;padding:13px 15px;font-size:13px;color:#a8c5e2;line-height:1.6}.faq{margin-top:40px}.faq details{border-bottom:1px solid rgba(121,188,232,.18);padding:14px 0}.faq summary{cursor:pointer;font-weight:780;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:15px}.faq summary::after{content:"+";color:var(--orange2);font-size:23px;font-weight:400}.faq details[open] summary::after{content:"−"}.faq p{font-size:14px;margin:12px 0 3px}.footer{padding:33px 0 42px;border-top:1px solid var(--line);margin-top:30px}.footer-inner{display:flex;justify-content:space-between;gap:24px;align-items:center}.footer small{color:#829ab2;font-size:11px}.footer a{color:#a4cce7;font-size:12px}.footer-nav{display:flex;gap:20px;flex-wrap:wrap}.toast{position:fixed;z-index:200;left:50%;bottom:23px;transform:translateX(-50%) translateY(12px);background:#f6fbff;color:#10294a;box-shadow:0 13px 42px #0008;border-radius:12px;padding:13px 19px;max-width:90vw;font-weight:700;font-size:13px;opacity:0;pointer-events:none;transition:opacity .22s,transform .22s}.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+.author-photo-wrap{position:relative;width:min(370px,100%);margin:0 auto 26px;border-radius:24px;padding:8px;background:linear-gradient(150deg,rgba(102,233,255,.88),rgba(15,56,120,.45) 45%,rgba(255,183,76,.9));box-shadow:0 24px 52px rgba(0,12,29,.28)}
+.author-photo{width:100%;height:480px;object-fit:cover;object-position:center 22%;border-radius:18px}
+.author-badge{position:absolute;left:18px;bottom:18px;padding:10px 16px;border-radius:999px;background:rgba(7,23,45,.85);border:1px solid rgba(111,210,255,.34);color:#eaf8ff;font-size:13px;font-weight:800;letter-spacing:.03em;box-shadow:0 10px 20px rgba(0,0,0,.2)}
+.author-brand{display:flex;flex-direction:column;align-items:center}
+.author-brand .author-logo{max-width:220px}
+.author-tagline{max-width:520px}
+.price-stack{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;margin:20px 0 8px}
+.price-old{font-size:22px;line-height:1.1;color:#88a1bb;text-decoration:line-through;text-decoration-thickness:2px;opacity:.9}
+.price-current{font-size:clamp(36px,4.2vw,56px);font-weight:900;line-height:1;color:#fff;letter-spacing:-.04em}
+.price-note{font-size:15px;color:#ffd392;margin:0 0 14px}
+.timer-title{margin:18px 0 10px;font-size:14px;color:#d8ebff;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.timer{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:18px}
+.timer-box{padding:14px 10px;border-radius:16px;border:1px solid rgba(102,211,255,.25);background:rgba(7,25,47,.68);text-align:center;box-shadow:inset 0 0 0 1px rgba(255,255,255,.02)}
+.timer-box strong{display:block;font-size:26px;line-height:1;color:#fff;margin-bottom:6px}
+.timer-box span{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#86cfff}
+.timer-expired{margin-bottom:18px;padding:14px 16px;border-radius:14px;background:rgba(226,139,6,.12);border:1px solid rgba(255,170,51,.28);color:#ffe0b1;font-size:14px}
+@media(max-width:780px){.timer{grid-template-columns:repeat(2,minmax(0,1fr))}.author-photo{height:420px}.author-badge{font-size:12px;padding:8px 12px}}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}.reveal.in{opacity:1;transform:none}
+  @media(max-width:1080px){.navlinks{gap:16px}.hero-grid{gap:32px}.poster-frame{max-width:370px}.floating.a{left:-12px}.floating.b{right:-11px}.game-layout{grid-template-columns:.9fr 1.1fr}.benefit-grid{gap:12px}.benefit{padding:22px}.author-grid{gap:35px}.purchase-grid{gap:40px}}
+  @media(max-width:780px){.navinner{height:70px}.navlinks{display:none;position:absolute;left:0;right:0;top:70px;padding:20px;background:#091d37;border-bottom:1px solid var(--line);box-shadow:0 20px 35px #00182fcc;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks>a:not(.btn){padding:9px 0}.menu-toggle{display:grid;place-items:center}.hero-grid,.video-area,.author-grid,.purchase-grid{grid-template-columns:1fr}.hero-grid{gap:55px}.hero-copy{text-align:left}.poster-frame{max-width:360px}.pain-grid,.benefit-grid{grid-template-columns:1fr 1fr}.pain-card{min-height:230px}.game-layout{grid-template-columns:1fr}.shot-panel{position:static}.game-list{grid-template-columns:1fr 1fr}.game-tab{padding:14px 10px}.assessments{grid-template-columns:1fr 1fr}.video-area{gap:25px}.author-art{min-height:305px}.section{padding:80px 0}.purchase{padding-top:45px}.purchase-grid{gap:25px}.footer-inner{align-items:flex-start;flex-direction:column}}
+  @media(max-width:520px){.container{width:min(calc(100% - 30px),var(--wide))}.brand-logo{width:116px}.brand-label{font-size:9px}.brand{gap:9px}.brand-sep{height:24px}.hero{padding:40px 0 70px}.hero h1{font-size:43px}.hero .lead{font-size:15px}.hero-actions{display:grid}.hero-actions .btn{width:100%}.stats{gap:3px}.stat{padding:2px 9px}.stat strong{font-size:25px}.stat span{font-size:10px;line-height:1.4}.floating{font-size:11px;padding:10px}.poster-frame{width:calc(100% - 34px)}.section-intro{margin-bottom:28px}.pain-grid,.benefit-grid,.game-list,.assessments{grid-template-columns:1fr}.pain-card{min-height:0}.game-shot{height:230px}.answer-strip{font-size:14px}.benefit{min-height:0}.author-art{min-height:280px}.cta-box{padding:45px 23px}.cta-box p{font-size:15px}.price-card{padding:22px}.footer-nav{gap:12px}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.poster-frame,.game-tab{transition:none}}
+  
+  /* Логотип у шапці: половина попереднього розміру; футер без змін */
+  .topbar .brand-logo{width:72px;height:auto;max-height:72px;object-fit:contain}
+  @media(max-width:520px){.topbar .brand-logo{width:58px;max-height:58px}}
+
+/* Public CODE CITY identity, no MA.Ю branding */
+.brand-symbol{display:grid;place-items:center;flex:0 0 auto;height:42px;width:48px;background:linear-gradient(145deg,#48e9fb,#88aaff);border-radius:13px;color:#0b2147;font:900 18px/1 ui-monospace,Consolas,monospace;box-shadow:0 0 22px rgba(55,197,242,.18)}
+.brand-name{color:#f3faff;font-size:clamp(20px,2vw,25px);line-height:1;font-weight:900;letter-spacing:.07em;white-space:nowrap}
+.featured-video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;border-radius:14px;background:#030b18;box-shadow:0 8px 26px rgba(0,0,0,.35)}
+.video-caption{color:#b7d5f2;font-size:14px;line-height:1.4;text-align:center;margin:12px 7px 3px}
+.author-photo-wrap{margin-bottom:0}
+.author-art{padding:30px;min-height:480px}
+#author .author-photo-wrap{max-width:410px}
+@media(max-width:780px){.brand-name{font-size:19px}.brand-symbol{height:38px;width:42px;font-size:16px}.author-art{min-height:0}}
+
+/* Надійне відображення навіть без JavaScript чи IntersectionObserver */
+.reveal,.reveal.in{opacity:1 !important;transform:none !important;visibility:visible !important;transition:none !important}
+/* Без JS мобільне меню залишається доступним */
+@media(max-width:780px){body:not(.script-ready) .navlinks{display:flex;position:static;background:transparent;box-shadow:none;border:none;padding:10px 0;flex-direction:row;flex-wrap:wrap;gap:13px}
+body:not(.script-ready) .navinner{height:auto;min-height:70px;flex-wrap:wrap;padding:12px 0}
+body:not(.script-ready) .menu-toggle{display:none}}
+</style>
+</head>
+<body>
+<a href="#main" onblur="this.style.left='-9999px'" onfocus="this.style.left='10px'" style="position:absolute;left:-9999px;top:5px">Перейти до змісту</a>
+<header class="topbar">
+<div class="container navinner">
+<a aria-label="CODE CITY — на головну" class="brand" href="#home"><span aria-hidden="true" class="brand-symbol">&lt;/&gt;</span><span class="brand-name">CODE CITY</span></a>
+<button aria-controls="navLinks" aria-expanded="false" aria-label="Відкрити меню" class="menu-toggle" id="menuToggle" type="button">☰</button>
+<nav aria-label="Навігація" class="navlinks" id="navLinks">
+<a href="#problem">Для кого</a><a href="#course">Що всередині</a><a href="#benefits">Переваги</a><a href="#video">Відео</a><a href="#author">Авторка</a>
+<a class="btn btn-primary btn-small" href="#payment">Отримати комплекс <span aria-hidden="true">↗</span></a>
+</nav>
+</div>
+</header>
+<main id="main">
+<!-- 1. ГОЛОВНИЙ ЕКРАН -->
+<section aria-labelledby="hero-title" class="hero" id="home">
+<div class="container hero-grid">
+<div class="hero-copy reveal">
+<div class="eyebrow">Інтерактивний курс програмування · 7 клас</div>
+<h1 id="hero-title">Python, який <em>дітям справді зрозумілий.</em> Крок за кроком.</h1>
+<p class="lead"><strong style="color:#f6fbff">CODE CITY</strong> — інтерактивний навчальний комплекс для 7 класу, у якому Python подано просто, наочно й цікаво для дітей. Тут вони не губляться в коді, а поступово розуміють, як він працює.</p>
+<div class="tagrow"><span class="tag">7 клас</span><span class="tag">6 навчальних ігор</span><span class="tag">Працює без інтернету</span></div>
+<div class="hero-actions"><a class="btn btn-primary" href="#course">Подивитися, що всередині <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="#video">Переглянути відеоогляд <span aria-hidden="true">▷</span></a></div>
+<div class="microtext"><b>●</b> Готовий комплект до уроку: теорія, практика й інтерактив — в одному місці</div>
+<div aria-label="Склад комплексу" class="stats"><div class="stat"><strong>6</strong><span>тематичних ігор</span></div><div class="stat"><strong>90</strong><span>навчальних місій</span></div><div class="stat"><strong>2</strong><span>підсумкові формати</span></div></div>
+</div>
+<div aria-label="Обкладинка навчального комплексу CODE CITY" class="reveal">
+<div class="poster-frame"><img alt="CODE CITY: неонове цифрове місто, робот Піксель та шість тем програмування" fetchpriority="high" height="1402" src="assets/cover.webp" width="1122"/><span class="floating a">↗ <strong>Python</strong> на практиці</span><span class="floating b">✦ 7 клас · <strong>CODE CITY</strong></span></div>
+</div>
+</div>
+</section>
+<!-- 2. БІЛЬ УЧИТЕЛЯ -->
+<section aria-labelledby="pain-title" class="section pain" id="problem"><div class="container">
+<div class="section-intro reveal"><div class="eyebrow">Знайомо з уроків?</div><h2 id="pain-title">Коли Python стає <span class="accent">набором незрозумілих команд</span></h2><p>Програмування складно пояснювати однаково всьому класу. Особливо тоді, коли учням ще важко пов’язати кілька рядків коду з реальним результатом.</p></div>
+<div class="pain-grid"><article class="pain-card reveal"><div class="pain-number">01</div><h3>«А навіщо нам це?»</h3><p>Дитина вводить команди за зразком, але не завжди бачить, яку життєву задачу розв’язує програма.</p></article><article class="pain-card reveal"><div class="pain-number">02</div><h3>Один клас — різний темп</h3><p>Поки хтось уже завершив роботу, іншому потрібне додаткове пояснення, підказка або ще одна спроба.</p></article><article class="pain-card reveal"><div class="pain-number">03</div><h3>Тести не замінюють код</h3><p>Учень може впізнати правильну відповідь, але губитися, коли треба скласти програму самостійно.</p></article></div>
+<div class="answer-strip reveal"><b>Тому в CODE CITY учні працюють із програмами, а не вгадують варіанти.</b> Вони перетягують рядки, доповнюють код, виправляють помилки й перевіряють результат.</div>
+</div></section>
+<!-- 3. ПРО ГРУ -->
+<section aria-labelledby="course-title" class="section game" id="course"><div class="container">
+<div class="section-intro reveal"><div class="eyebrow">Що входить до CODE CITY</div><h2 id="course-title">Не одна гра, а <span class="cyan">ціла система навчання</span></h2><p>Шість тематичних ігор пов’язані спільним світом Пікселя, але кожну можна запускати окремо. Оберіть потрібну тему — і працюйте з нею на своєму уроці.</p></div>
+<div class="game-layout"><div aria-label="Навчальні теми CODE CITY" class="game-list reveal" role="tablist">
+<button aria-controls="topicPreview" aria-selected="true" class="game-tab active" data-topic="0" id="tab0" role="tab"><span class="num">00</span><span><strong>Змінні та типи даних</strong><small>Перші команди Python</small></span></button>
+<button aria-controls="topicPreview" aria-selected="false" class="game-tab" data-topic="1" id="tab1" role="tab"><span class="num">01</span><span><strong>Арифметичні обчислення</strong><small>Розв’язування життєвих задач</small></span></button>
+<button aria-controls="topicPreview" aria-selected="false" class="game-tab" data-topic="2" id="tab2" role="tab"><span class="num">02</span><span><strong>Розгалуження</strong><small>if · elif · else</small></span></button>
+<button aria-controls="topicPreview" aria-selected="false" class="game-tab" data-topic="3" id="tab3" role="tab"><span class="num">03</span><span><strong>Підпрограми</strong><small>def · аргументи · return</small></span></button>
+<button aria-controls="topicPreview" aria-selected="false" class="game-tab" data-topic="4" id="tab4" role="tab"><span class="num">04</span><span><strong>Вікна та події</strong><small>tkinter · обробники</small></span></button>
+<button aria-controls="topicPreview" aria-selected="false" class="game-tab" data-topic="5" id="tab5" role="tab"><span class="num">05</span><span><strong>Графічні проєкти</strong><small>Canvas · малювання кодом</small></span></button>
+</div><div aria-labelledby="tab0" class="shot-panel reveal" id="topicPreview" role="tabpanel"><div class="fake-browser"><i></i><i></i><i></i><span>code_city / lesson.py</span></div><img alt="Скріншот гри про змінні й типи даних" class="game-shot" height="1049" id="topicImage" loading="lazy" src="assets/game-variables.webp" width="1080"/><div class="shot-caption"><h3 id="topicTitle">Перша програма Пікселя</h3><p id="topicText">Знайомство з print(), input(), змінними, присвоюванням та типами даних. Короткі місії для першого кроку.</p></div></div></div>
+<div class="assessments reveal"><div class="assessment"><span class="ico">◫</span><div><b>Підсумкова контрольна</b><p>12 різнорівневих завдань за всіма темами з результатом за 12-бальною шкалою.</p></div></div><div class="assessment"><span class="ico">⌘</span><div><b>Проєктна лабораторія</b><p>5 рівноцінних проєктів на вибір, планування, написання програми, тестування та захист.</p></div></div></div>
+</div></section>
+<!-- 4. ПЕРЕВАГИ -->
+<section aria-labelledby="benefits-title" class="section" id="benefits"><div class="container"><div class="section-intro reveal"><div class="eyebrow">Переваги для уроку</div><h2 id="benefits-title">До уроку <span class="accent">майже не треба готуватися</span></h2><p>У комплекті вже є теоретичний, практичний та інтерактивний матеріал, тому урок можна запускати без довгої підготовки з нуля.</p></div><div class="benefit-grid">
+<article class="benefit reveal"><div class="benefit-icon">⌨</div><h3>Урок уже зібраний</h3><p>Пояснення, практичні завдання й інтерактив уже в комплекті — не потрібно окремо шукати теорію, вправи та цифрові матеріали.</p></article>
+<article class="benefit reveal"><div class="benefit-icon">◇</div><h3>Дітям справді зрозуміло</h3><p>Нові теми подано поетапно, простою мовою та з прикладами, щоб дитина не губилася в коді й розуміла кожен крок.</p></article>
+<article class="benefit reveal"><div class="benefit-icon">↻</div><h3>Теорія від Пікселя</h3><p>Перед кожним рівнем є коротке пояснення, приклади та підказки. До матеріалу можна повертатися в будь-який момент.</p></article>
+<article class="benefit reveal"><div class="benefit-icon">▣</div><h3>Практика одразу після пояснення</h3><p>Після теорії учні відразу виконують завдання: збирають код, заповнюють пропуски, виправляють помилки й створюють власні програми.</p></article>
+<article class="benefit reveal"><div class="benefit-icon">⬡</div><h3>Інтерактив утримує увагу</h3><p>Сюжет, бали, персонажі, анімації та миттєвий результат роблять навчання ближчим до гри, а не до сухого тренажера.</p></article>
+<article class="benefit reveal"><div class="benefit-icon">◎</div><h3>Зручно для вчителя</h3><p>Розпакували архів, відкрили HTML у браузері — і працюєте офлайн. Теми можна запускати окремо, повертатися до них і починати заново.</p></article>
+</div></div></section>
+<!-- 5. ВІДЕО -->
+<section aria-labelledby="video-title" class="section" id="video"><div class="container video-area"><div class="reveal"><div class="eyebrow">Побачити на власні очі</div><h2 id="video-title">Як працює <span class="cyan">CODE CITY</span></h2><p class="lead">Погляньте, як учні працюють у CODE CITY: обирають тему, читають пояснення, складають код і запускають програми просто в браузері.</p><p>Відеоогляд показує інтерфейс і реальні завдання комплексу — без встановлення Python та додаткових програм.</p><a class="btn btn-outline" href="#payment">Переглянути склад комплекту ↗</a></div><div class="video-stage reveal"><video aria-label="Відеоогляд CODE CITY — демонстрація навчальних ігор" class="featured-video" controls="" id="videoLocal" playsinline="" poster="assets/code-city-video-poster.webp" preload="metadata"><source src="assets/code-city-video.mp4" type="video/mp4"/>Ваш браузер не підтримує відтворення MP4-відео.</video><p class="video-caption">CODE CITY у дії · повний відеоогляд</p></div></div></section>
+<!-- 6. АВТОРКА -->
+<section aria-labelledby="author-title" class="section author" id="author"><div class="container author-grid"><div class="author-art reveal"><div class="author-photo-wrap"><img alt="Юлія Машкаринець — учителька інформатики та авторка CODE CITY" class="author-photo" loading="lazy" src="assets/author-yuliia.jpg"/><div class="author-badge">Авторка CODE CITY</div></div></div><div class="reveal"><div class="eyebrow">Про авторку</div><h2 id="author-title">Юлія Машкаринець — <span class="accent">авторка CODE CITY</span></h2><p class="lead"><strong style="color:#fff">Учителька інформатики, заступниця директора з навчально-виховної роботи</strong> та практик, яка щодня бачить, що дітям потрібне не більше коду, а більше зрозумілості, наочності й логіки у подачі.</p><p class="author-tagline">CODE CITY створено з бажання зробити вивчення Python для дітей не лячним і перевантаженим, а послідовним, цікавим та доступним. Тут учень іде від маленьких зрозумілих дій до власних програм і проєктів.</p><div class="author-note">Моя ідея проста: дитина повинна не просто переписати код, а зрозуміти, що саме вона робить і чому програма працює саме так.</div></div></div></section>
+<!-- 7. CTA -->
+<section class="cta" id="start"><div class="container"><div class="cta-box reveal"><div class="eyebrow">Ваш наступний урок може бути іншим</div><h2>Дайте учням можливість <span class="accent">створювати</span>, а не лише повторювати</h2><p>Готовий маршрут Python для 7 класу: від перших команд до програм, які реагують на дії користувача й малюють на екрані.</p><a class="btn btn-primary" href="#payment">Хочу CODE CITY для своїх уроків ↗</a></div></div></section>
+<!-- 8. ОПЛАТА -->
+<section aria-labelledby="payment-title" class="section purchase" id="payment"><div class="container purchase-grid"><div class="reveal"><div class="eyebrow">Повний комплект</div><h2 id="payment-title">Усе в одному архіві. <span class="cyan">Готово до запуску.</span></h2><p class="lead">Завантажуєте комплект, відкриваєте головну сторінку — і обираєте потрібну навчальну тему.</p><div class="checklist"><div class="checkline"><span>✓</span>6 тематичних ігор · 5 рівнів і 15 завдань у кожній</div><div class="checkline"><span>✓</span>Підсумкова контрольна на 12 завдань</div><div class="checkline"><span>✓</span>Проєктна лабораторія з 5 завданнями на вибір</div><div class="checkline"><span>✓</span>Єдине меню, навігація та збереження прогресу</div><div class="checkline"><span>✓</span>Окрема сторінка з інструкціями для вчителя</div><div class="checkline"><span>✓</span>Автономна робота у браузері без підключення до інтернету</div></div></div><div class="reveal"><div class="price-card"><span class="offer-badge" id="offerBadge">Навчальний комплект · 7 клас</span><div class="price-stack"><div class="price-old" id="oldPrice">700 грн</div><div class="price-current" id="currentPrice">199 грн</div></div><div class="price-note" id="priceText">Лише перші 24 години після старту таймера на цій сторінці</div><div class="timer-title">До завершення спеціальної пропозиції:</div><noscript><p style="color:#ffdca6">Для роботи таймера увімкніть JavaScript у браузері.</p></noscript><div aria-label="Залишок часу до завершення акції" class="timer" id="promoTimer"><div class="timer-box"><strong id="days">01</strong><span>днів</span></div><div class="timer-box"><strong id="hours">00</strong><span>годин</span></div><div class="timer-box"><strong id="minutes">00</strong><span>хвилин</span></div><div class="timer-box"><strong id="seconds">00</strong><span>секунд</span></div></div><div class="timer-expired" hidden="" id="expiredNote">24 години спеціальної пропозиції завершилися. Актуальну суму перевірте перед оплатою у WayForPay.</div><div class="price-meta">Повний цифровий комплект · ZIP-архів · одразу готовий до використання</div><a aria-label="Придбати CODE CITY через WayForPay (відкриється нова вкладка)" class="btn btn-primary buybtn" href="https://secure.wayforpay.com/payment/sea50d6c28416" id="buyButton" rel="noopener noreferrer" target="_blank">Перейти до оплати ↗</a><div class="purchase-setup" id="setupNote">Оплата здійснюється через WayForPay на окремій захищеній сторінці. Перед оплатою перевірте суму та умови замовлення.</div><div class="faq"><details><summary>Чи потрібен інтернет для ігор?</summary><p>Ні. Після завантаження й розпакування комплексу HTML-ігри працюють локально в сучасному браузері.</p></details><details><summary>Чи можна запускати теми окремо?</summary><p>Так, усі шість тематичних ігор доступні незалежно одна від одної через головне меню.</p></details><details><summary>Чи потрібен встановлений Python?</summary><p>Для роботи навчальних ігор не потрібен. Вони використовують вбудовані навчальні виконавці та емулятори частини можливостей Python і tkinter.</p></details><details><summary>Чи можна передавати архів іншим учителям?</summary><p>Матеріали призначені для використання покупцем у власній педагогічній діяльності. Передавання файлів третім особам і перепродаж не дозволені, крім випадків, передбачених законодавством.</p></details></div></div></div></div></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><div><a aria-label="CODE CITY — повернутися на початок" class="brand" href="#home"><span aria-hidden="true" class="brand-symbol">&lt;/&gt;</span><span class="brand-name">CODE CITY</span></a><small>© 2026 Юлія Машкаринець. Усі права захищено.</small></div><nav aria-label="Нижня навігація" class="footer-nav"><a href="#course">Комплекс</a><a href="#author">Авторка</a><a href="#payment">Придбати</a><a href="#home">Нагору ↑</a></nav></div></footer>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script id="code-city-countdown">
+(function () {
+  "use strict";
+  var KEY = "code_city_offer_24h_2026_11_10_v2";
+  var PERIOD = 24 * 60 * 60 * 1000;
+  // To use a real single deadline for everyone, enter an exact date below instead.
+  // Example: "2026-11-15T23:59:59+02:00".
+  var FIXED_END_ISO = "";
+  var ids = ["days", "hours", "minutes", "seconds"];
+  var output = ids.map(function (id) { return document.getElementById(id); });
+  if (output.some(function (node) { return !node; })) return;
+  var now = Date.now();
+  var deadline = FIXED_END_ISO ? Date.parse(FIXED_END_ISO) : NaN;
+  if (!Number.isFinite(deadline)) {
+    deadline = NaN;
+    try {
+      var val = Number(window.localStorage.getItem(KEY));
+      if (Number.isFinite(val) && val > 1600000000000 && val < 4000000000000) deadline = val;
+    } catch (e) { /* Privacy settings may block localStorage. */ }
+    if (!Number.isFinite(deadline)) {
+      deadline = now + PERIOD;
+      try { window.localStorage.setItem(KEY, String(deadline)); } catch (e) {}
+    }
+  }
+  var price = document.getElementById("currentPrice");
+  var old = document.getElementById("oldPrice");
+  var note = document.getElementById("priceText");
+  var expired = document.getElementById("expiredNote");
+  var timer = document.getElementById("promoTimer");
+  var format = function (number) { return String(number).padStart(2, "0"); };
+  function refresh() {
+    var remaining = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
+    var d = Math.floor(remaining / 86400);
+    var h = Math.floor((remaining % 86400) / 3600);
+    var m = Math.floor((remaining % 3600) / 60);
+    var s = remaining % 60;
+    [d, h, m, s].forEach(function (value, i) { output[i].textContent = format(value); });
+    if (timer) timer.setAttribute("aria-label", "До завершення пропозиції: " + d + " днів, " + h + " годин, " + m + " хвилин, " + s + " секунд");
+    if (remaining <= 0) {
+      if (old) old.hidden = true;
+      if (price) price.textContent = "Акція завершена";
+      if (note) note.textContent = "Актуальну вартість перевірте на сторінці оплати.";
+      if (expired) expired.hidden = false;
+    } else {
+      if (old) old.hidden = false;
+      if (price) price.textContent = "199 грн";
+      if (note) note.textContent = "Спеціальна ціна протягом 24 годин від першого відкриття сторінки";
+      if (expired) expired.hidden = true;
+    }
+  }
+  refresh();
+  window.setInterval(refresh, 1000);
+  document.addEventListener("visibilitychange", refresh);
+})();
+</script>
+<script>
+'use strict';
+document.body.classList.add('script-ready');
+// НАЛАШТУВАННЯ ДЛЯ ПУБЛІКАЦІЇ. Вкажіть реальні дані перед запуском продажів.
+const SITE_CONFIG = {
+  checkoutUrl: 'https://secure.wayforpay.com/payment/sea50d6c28416',            // Ваше повне HTTPS-посилання на оплату або сторінку продажу
+};
+// Налаштування таймера — у блоці нижче.
+const topics = [
+ {title:'Перша програма Пікселя',text:'Знайомство з print(), input(), змінними, присвоюванням та типами даних. Короткі місії для першого кроку.',image:'assets/game-variables.webp',alt:'Гра про змінні та типи даних'},
+ {title:'Розв’язуємо життєві задачі',text:'Покупки, доставка, час, бюджет і комунальні платежі — учень складає Python-програми для зрозумілих ситуацій.',image:'assets/game-math.webp',alt:'Гра з арифметичними обчисленнями'},
+ {title:'Навчаємо код приймати рішення',text:'Від простого if до кількох умов і вкладених розгалужень. Учні бачать, як програма обирає різні дії.',image:'assets/game-branch.webp',alt:'Гра про розгалуження'},
+ {title:'Функції, які допомагають місту',text:'def, параметри, аргументи, return та створення програм із кількома взаємопов’язаними функціями.',image:'assets/game-functions.webp',alt:'Гра про функції Python'},
+ {title:'Майстерня інтерактивних вікон',text:'Властивості вікна, події миші та клавіатури: учень редагує код і спостерігає реакцію навчального емулятора.',image:'assets/game-windows.webp',alt:'Гра з віконними проєктами'},
+ {title:'Малюнки, створені програмою',text:'Координати, фігури, кольори та Canvas — код перетворюється на зображення, а в творчій студії можна зберігати PNG.',image:'assets/game-graphics.webp',alt:'Гра з графічними зображеннями'},
+];
+const tabs=Array.from(document.querySelectorAll('[data-topic]'));
+const topicImage=document.getElementById('topicImage');
+function showTopic(i){
+  const t=topics[i]; if(!t)return;
+  tabs.forEach((b,n)=>{b.classList.toggle('active',n===i);b.setAttribute('aria-selected',String(n===i));b.tabIndex=n===i?0:-1});
+  topicImage.style.opacity='.35';
+  topicImage.src=t.image;topicImage.alt=t.alt;
+  document.getElementById('topicTitle').textContent=t.title;
+  document.getElementById('topicText').textContent=t.text;
+  document.getElementById('topicPreview').setAttribute('aria-labelledby','tab'+i);
+  if(topicImage.complete)topicImage.style.opacity='1';
+}
+topicImage.addEventListener('load',()=>topicImage.style.opacity='1');
+tabs.forEach((b,i)=>{
+ b.addEventListener('click',()=>showTopic(i));
+ b.addEventListener('keydown',e=>{if(!['ArrowDown','ArrowUp','ArrowRight','ArrowLeft','Home','End'].includes(e.key))return;e.preventDefault();const dest=e.key==='Home'?0:e.key==='End'?tabs.length-1:(i+(e.key==='ArrowRight'||e.key==='ArrowDown'?1:-1)+tabs.length)%tabs.length;showTopic(dest);tabs[dest].focus()})
+});
+const toggle=document.getElementById('menuToggle'),nav=document.getElementById('navLinks');
+toggle.addEventListener('click',()=>{const opened=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(opened));toggle.textContent=opened?'×':'☰'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
+var footerYear = document.getElementById('year'); if (footerYear) footerYear.textContent = new Date().getFullYear();
+if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion:reduce)').matches){const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}}),{threshold:.09});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));}else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
+const buy=document.getElementById('buyButton'),setup=document.getElementById('setupNote');
+function validHttpUrl(url){try{const u=new URL(url);return u.protocol==='https:'||u.protocol==='http:'}catch{return false}}
+// Таймер запускається окремим скриптом перед основним JavaScript.
+
+
+
+</script>
+</body>
+</html>
