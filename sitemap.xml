@@ -1,18 +1,2 @@
 <?xml version='1.0' encoding='utf-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://studentffmi.github.io/codecity/</loc>
-  </url>
-  <url>
-    <loc>https://studentffmi.github.io/codecity/terms.html</loc>
-  </url>
-  <url>
-    <loc>https://studentffmi.github.io/codecity/delivery.html</loc>
-  </url>
-  <url>
-    <loc>https://studentffmi.github.io/codecity/refund.html</loc>
-  </url>
-  <url>
-    <loc>https://studentffmi.github.io/codecity/contacts.html</loc>
-  </url>
-</urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://studentffmi.github.io/codecity/</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/index.html</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/prohrama-movy-prohramuvannia.html</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/seredovyshcha-stvorennia-proiektiv.html</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/zminni-prysvoiuvannia-typy-danykh.html</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/konsolni-aryfmetychni-obchyslennia.html</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/rozghaluzhennia-if-else.html</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/konsolni-proiekty-rozghaluzhennia-eksperyment.html</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/pidprohramy-arhumenty-rezultaty.html</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/praktychna-robota-3-pidprohramy-rozghaluzhennia.html</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/vikonni-proiekty-vikno-vlastyvosti.html</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/podii-z-viknom-obrobnyk-podii.html</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/vikna-povidomlen-tkinter.html</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/praktychna-robota-4-vlastyvosti-povidomlennia.html</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/canvas-hrafichni-zobrazhennia.html</loc></url><url><loc>https://studentffmi.github.io/codecity/topics/navchalni-proiekty-python.html</loc></url><url><loc>https://studentffmi.github.io/codecity/terms.html</loc></url><url><loc>https://studentffmi.github.io/codecity/delivery.html</loc></url><url><loc>https://studentffmi.github.io/codecity/refund.html</loc></url><url><loc>https://studentffmi.github.io/codecity/contacts.html</loc></url></urlset>
