@@ -121,3 +121,8 @@ body:before{opacity:.34;background:radial-gradient(#cdf5ff 1px,transparent 2px);
 @media(max-width:820px){.gift-panel{grid-template-columns:1fr}.gift-cover{max-width:650px;width:100%;margin:auto}.hero:before{background-position:60% bottom}.hero:after{background:linear-gradient(90deg,#071531e8,#071634b8)}}
 @media(max-width:570px){.gift-panel{padding:22px 18px}.gift-copy h2{font-size:29px}.hero:before{background-position:57% bottom}.hero:after{background:#06132bba}.stat strong{font-size:30px}#video .video-play-disc{width:67px;height:67px;box-shadow:0 0 0 8px #fff3}#video .video-play-triangle{border-top-width:14px;border-bottom-width:14px;border-left-width:23px;margin-left:6px}}
 @media(prefers-reduced-motion:reduce){body:before{animation:none}#gallery .slide{transition:none}}
+
+/* Stable single-frame fade prevents duplicate interface text during gallery changes. */
+#gallery .slide#singleGalleryImage{opacity:1;visibility:visible;transition:opacity .18s ease-in-out}
+#gallery .slide#singleGalleryImage.is-fading{opacity:0}
+@media(prefers-reduced-motion:reduce){#gallery .slide#singleGalleryImage{transition:none}}
