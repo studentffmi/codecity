@@ -137,7 +137,7 @@ body:before{opacity:.34;background:radial-gradient(#cdf5ff 1px,transparent 2px);
 #bonus.gift-section{padding:78px 0;background:radial-gradient(circle at 15% 20%,rgba(45,111,213,.65),transparent 48%),linear-gradient(130deg,#071b47,#243b88 65%,#1c1b54)}
 #bonus .gift-panel{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:34px;align-items:center;background:linear-gradient(145deg,#0a2556,#14235a);border:2px solid #65dcff;border-radius:26px;box-shadow:0 0 0 6px rgba(101,220,255,.08),0 24px 80px rgba(1,5,28,.65);padding:clamp(22px,3.3vw,42px)}
 #bonus .gift-cover{padding:0;background:none;border:0;border-radius:17px;box-shadow:none;overflow:visible}
-#bonus .gift-cover img{display:block;width:100%;height:auto;aspect-ratio:878/533;object-fit:contain;max-width:100%;border:1px solid #83dbff;border-radius:16px;box-shadow:0 17px 48px #02091daa}
+#bonus .gift-cover img{display:block;width:100%;height:auto;aspect-ratio:650/919;object-fit:contain;max-width:100%;border:1px solid #83dbff;border-radius:16px;box-shadow:0 17px 48px #02091daa}
 #bonus .gift-kicker{display:inline-block;background:#ffd74f;color:#092452;font-size:13px;letter-spacing:.07em;border-radius:8px;padding:8px 12px;margin-bottom:17px}
 #bonus .gift-copy h2{font-size:clamp(29px,3.7vw,45px);line-height:1.12;margin:0 0 15px;color:#fff}
 #bonus .gift-copy>p{font-size:16px;color:#dbefff}
