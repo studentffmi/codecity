@@ -150,3 +150,45 @@ body:before{opacity:.34;background:radial-gradient(#cdf5ff 1px,transparent 2px);
 @media(max-width:900px){#bonus .gift-panel{grid-template-columns:1fr}#bonus .gift-cover{max-width:760px;width:100%;margin:0 auto}#bonus .gift-formats{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{background-position:center,67% 55%!important}}
 @media(max-width:570px){.hero{min-height:0;background-position:center,59% center!important}.hero-panel{background:rgba(6,21,54,.76)!important}#bonus.gift-section{padding:45px 0}#bonus .gift-formats{grid-template-columns:1fr}#bonus .gift-panel{gap:20px;padding:20px 17px}#bonus .gift-cover img{border-radius:12px}}
 @media(prefers-reduced-motion:reduce){.hero{background-attachment:scroll}}
+
+
+/* 2026-11-21 · Бонус: текстова колонка на всю висоту вертикальної обкладинки. */
+@media(min-width:901px){
+  #bonus .gift-panel{align-items:stretch}
+  #bonus .gift-copy{
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    grid-template-rows:auto auto auto minmax(0,1fr) auto auto;
+    align-self:stretch;
+    min-width:0;
+    row-gap:clamp(12px,1.5vw,19px);
+  }
+  #bonus .gift-copy .gift-kicker{
+    justify-self:start;
+    align-self:start;
+    margin:0;
+  }
+  #bonus .gift-copy h2{margin:0}
+  #bonus .gift-copy>p{margin:0}
+  #bonus .gift-copy .gift-formats{
+    margin:0;
+    width:100%;
+    align-self:center;
+  }
+  #bonus .gift-copy .gift-footer{margin:0}
+  #bonus .gift-copy .gift-cta{
+    justify-self:start;
+    align-self:end;
+    margin:0;
+  }
+}
+@media(max-width:900px){
+  #bonus .gift-copy{display:flex;flex-direction:column;gap:15px}
+  #bonus .gift-copy .gift-kicker{align-self:flex-start;margin:0}
+  #bonus .gift-copy h2,#bonus .gift-copy>p{margin:0}
+  #bonus .gift-copy .gift-formats,#bonus .gift-copy .gift-footer{margin:0}
+  #bonus .gift-copy .gift-cta{align-self:flex-start;margin:0}
+}
+@media(max-width:570px){
+  #bonus .gift-copy .gift-cta{align-self:stretch;text-align:center}
+}
