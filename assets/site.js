@@ -90,39 +90,3 @@ updateGalleryUi();startCarousel();
 })();
 
 const menu=document.querySelector('#menuBtn'),nav=document.querySelector('#mainNav');menu.addEventListener('click',()=>{let v=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(v));menu.textContent=v?'×':'☰'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
-// Персональний 24-годинний відлік від першого відкриття сторінки.
-// Зберігається між перезавантаженнями й не починається наново після завершення.
-// Фактична ціна та строк дії пропозиції мають відповідати умовам у WayForPay.
-const OFFER_DURATION_MS=24*60*60*1000;
-const OFFER_STORAGE_KEY='codecity-offer-first-visit-24h-v1';
-const offerStartedAt=(()=>{
-  const now=Date.now();
-  try{
-    const saved=Number(localStorage.getItem(OFFER_STORAGE_KEY));
-    if(Number.isFinite(saved)&&saved>0&&saved<=now) return saved;
-    localStorage.setItem(OFFER_STORAGE_KEY,String(now));
-  }catch(_){ /* Локальне сховище може бути заблоковане браузером. */ }
-  return now;
-})();
-const offerDeadline=offerStartedAt+OFFER_DURATION_MS;
-function tick(){
-  const rem=Math.max(0,Math.ceil((offerDeadline-Date.now())/1000));
-  const parts=[Math.floor(rem/3600),Math.floor(rem%3600/60),rem%60];
-  ['h','m','s'].forEach((id,i)=>{
-    const element=document.getElementById(id);
-    if(element)element.textContent=String(parts[i]).padStart(2,'0');
-  });
-  if(rem===0){
-    const timer=document.getElementById('timerBlock');
-    const oldPrice=document.getElementById('oldPrice');
-    const message=document.getElementById('priceMessage');
-    const label=document.querySelector('.price-box > .kicker');
-    if(timer)timer.hidden=true;
-    if(oldPrice)oldPrice.hidden=true;
-    if(message)message.textContent='24-годинний відлік завершився. Перевірте актуальну суму на платіжній сторінці.';
-    if(label)label.textContent='Вартість комплексу';
-  }
-}
-tick();
-setInterval(tick,1000);
-document.addEventListener('visibilitychange',tick);
